@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "ReformaGrotesk";
+  src: url("../../font/ReformaGroteskMedium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "ReformaGrotesk";
+  src: url("../../font/ReformaGroteskDemi.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "ReformaGrotesk";
+  src: url("../../font/ReformaGroteskBold.woff") format("woff");
+  font-weight: 700;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 2.0833333333vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__nav .nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav .nav__list-item {
+  margin-right: 2.0833333333vw;
+}
+.header__nav .nav__list-item:last-child {
+  margin-right: 0;
+}
+.header__nav .nav__list-item a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 120%;
+}
+
+body {
+  background: #1E1E1E;
+  font-family: "ReformaGrotesk";
+}
+
+body, div, span, p, ul, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}/*# sourceMappingURL=index.css.map */

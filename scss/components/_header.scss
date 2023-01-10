@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: vw(40);
+    @include flex($justify: space-around);
+    &__nav {
+        .nav__list {
+            @include flex;
+            &-item {
+                margin-right: vw(40);
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: $text-white;
+                    @include font(vw(24), 500, 120%)
+                }
+            }
+        }
+    }
+}

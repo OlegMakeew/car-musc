@@ -105,6 +105,75 @@
   text-transform: uppercase;
 }
 
+.achievement {
+  color: #FFF;
+  margin-top: 5.2083333333vw;
+  margin-bottom: 4.1666666667vw;
+}
+.achievement .row {
+  justify-content: space-around;
+}
+.achievement__title {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.7083333333vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 2.0833333333vw;
+}
+.achievement__text {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 120%;
+  margin-top: 3.125vw;
+  width: 27.3958333333vw;
+}
+.achievement .rhombys {
+  margin-left: 0.2604166667vw;
+}
+.achievement__reward .col-6 {
+  text-align: center;
+}
+.achievement__reward .col-6:last-child {
+  margin-top: 3.7037037037vh;
+}
+.achievement__reward-list li {
+  border: 1px solid #FFFFFF;
+  padding: 2.3148148148vh 1.09375vw 3.2407407407vh 1.0416666667vw;
+}
+.achievement__reward-title {
+  color: #DB3138;
+  text-transform: uppercase;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.7083333333vw;
+  line-height: 140%;
+}
+.achievement__reward-title span {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 140%;
+}
+.achievement__reward-text {
+  text-transform: uppercase;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 140%;
+}
+.achievement__reward-img {
+  margin-bottom: 2.037037037vh;
+  width: 1.9791666667vw;
+  height: 2.3958333333vw;
+}
+
 body {
   background: #1E1E1E;
   font-family: "ReformaGrotesk";
@@ -169,4 +238,13 @@ ul {
 
 .col-4 {
   width: 33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.container {
+  max-width: 67.5vw;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

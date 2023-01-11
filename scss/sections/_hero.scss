@@ -3,5 +3,44 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    border: 1px dashed #FFFFFF;
+    @include flex($justify: flex-start);
+    flex-direction: column;
+    padding-top: vh(248);
+    &__text {
+        color: $text-white;
+        @include font(vw(40), 500, 120%);
+        margin: vh(40) 0;
+        text-align: center;
+    }
+    .button {
+        margin-bottom: vh(103);
+    }
+    .row {
+        background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%);
+        margin-bottom: vh(80);
+    }
+    &__info {
+        @include flex($justify: flex-start);
+        flex-direction: column;
+        border: 1px solid #FFFFFF;
+        border-left: none;
+        padding: vw(40) 0;
+        &:last-child {
+            border-right: none;
+        }
+        &-text {
+            color: $text-white;
+            @include font(vw(18), 600, 140%);
+            text-transform: uppercase;
+            margin-bottom: vh(20);
+        }
+        &-list {
+            li {
+                color: $text-red;
+                @include font(vw(24), 600, 140%);
+                text-transform: uppercase;
+            }
+        }
+    }
 }

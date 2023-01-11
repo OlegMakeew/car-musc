@@ -20,3 +20,49 @@ body, div, span, p, ul, h1, h2, h3, h4, h5, h6 {
 ul {
     list-style-type: none;
 }
+
+.burger {
+    svg {
+        width: vw(50);
+        height: vh(25);
+    }
+}
+
+.main__title {
+    color: $text-red;
+    @include font(vw(150), 700, 125%)
+}
+
+.rhombys {
+    width: vw(150);
+    span {
+        width: vw(10);
+        height: vw(10);
+        margin-right: vw(30);
+        display: inline-block;
+        background-color: $bg-red;
+        transform: rotate(45deg);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.button {
+    color: $text-white;
+    @include font(vw(24), 600, 140%);
+    border: none;
+    background: linear-gradient(to right, $bg-red 70%, transparent 30%);
+    padding: vh(15) 0 vh(12) vw(25);
+    text-transform: uppercase;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-4 {
+    width: 33%;
+}

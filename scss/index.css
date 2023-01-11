@@ -49,7 +49,60 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  border: 1px dashed #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 22.962962963vh;
+}
+.hero__text {
+  color: #FFF;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.0833333333vw;
+  line-height: 120%;
+  margin: 3.7037037037vh 0;
+  text-align: center;
+}
+.hero .button {
+  margin-bottom: 9.537037037vh;
+}
+.hero .row {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%);
+  margin-bottom: 7.4074074074vh;
+}
+.hero__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #FFFFFF;
+  border-left: none;
+  padding: 2.0833333333vw 0;
+}
+.hero__info:last-child {
+  border-right: none;
+}
+.hero__info-text {
+  color: #FFF;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 1.8518518519vh;
+}
+.hero__info-list li {
+  color: #DB3138;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 140%;
+  text-transform: uppercase;
 }
 
 body {
@@ -64,4 +117,56 @@ body, div, span, p, ul, h1, h2, h3, h4, h5, h6 {
 
 ul {
   list-style-type: none;
+}
+
+.burger svg {
+  width: 2.6041666667vw;
+  height: 2.3148148148vh;
+}
+
+.main__title {
+  color: #DB3138;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.8125vw;
+  line-height: 125%;
+}
+
+.rhombys {
+  width: 7.8125vw;
+}
+.rhombys span {
+  width: 0.5208333333vw;
+  height: 0.5208333333vw;
+  margin-right: 1.5625vw;
+  display: inline-block;
+  background-color: #DB3138;
+  transform: rotate(45deg);
+}
+.rhombys span:last-child {
+  margin-right: 0;
+}
+
+.button {
+  color: #FFF;
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 140%;
+  border: none;
+  background: linear-gradient(to right, #DB3138 70%, transparent 30%);
+  padding: 1.3888888889vh 0 1.1111111111vh 1.3020833333vw;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col-4 {
+  width: 33%;
 }/*# sourceMappingURL=index.css.map */

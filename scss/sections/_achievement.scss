@@ -1,0 +1,52 @@
+.achievement {
+    color: $text-white;
+    margin-top: vw(100);
+    margin-bottom: vw(80);
+    .row {
+        justify-content: space-around
+    }
+    &__title {
+        @include font(vw(52), 600, 140%);
+        text-transform: uppercase;
+        margin-bottom: vw(40);
+    }
+    &__text {
+        @include font(vw(24), 500, 120%);
+        margin-top: vw(60);
+        width: vw(526);
+    }
+    .rhombys {
+        margin-left: vw(5);
+    }
+    &__reward {
+        .col-6 {
+            text-align: center;
+            &:last-child {
+                margin-top: vh(40);
+            }
+        }
+        &-list {
+            li {
+                border: 1px solid #FFFFFF;
+                padding: vh(25) vw(21) vh(35) vw(20);
+            }
+        }
+        &-title {
+            color: $text-red;
+            text-transform: uppercase;
+            @include font(vw(52), 600, 140%);
+            span {
+                @include font(vw(24), 600, 140%)
+            }
+        }
+        &-text {
+            text-transform: uppercase;
+            @include font(vw(16), 600, 140%)
+        }
+        &-img {
+            margin-bottom: vh(22);
+            width: vw(38);
+            height: vw(46);
+        }
+    }
+}

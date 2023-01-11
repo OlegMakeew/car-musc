@@ -6,6 +6,7 @@
 @import './components/header';
 
 @import './sections/hero';
+@import './sections/achievement';
 
 body {
     background: $bg-black;
@@ -65,4 +66,13 @@ ul {
 
 .col-4 {
     width: 33%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.container {
+    max-width: vw(1296);
+    margin: 0 auto;
 }

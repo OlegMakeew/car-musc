@@ -1,0 +1,26 @@
+.events {
+    padding-top: vw(100);
+    .row {
+        .col-4 {
+            padding-right: vw(24);
+            box-sizing: border-box;
+            position: relative;
+        }
+    }
+    &__info {
+        position: absolute;
+        height: vh(105);
+        width: vw(366);
+        left: vw(25);
+        bottom: vw(-52.5);
+        background: linear-gradient(to bottom, $bg-red 70%, transparent 30%);
+        padding: vw(30) vw(61) 0 vw(61);
+        box-sizing: border-box;
+        &-text {
+            @include font(vw(18), 600, 140%);
+            color: $text-white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}

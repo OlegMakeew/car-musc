@@ -25,6 +25,7 @@
         flex-direction: column;
         border: 1px solid #FFFFFF;
         border-left: none;
+        box-sizing: border-box;
         padding: vw(40) 0;
         &:last-child {
             border-right: none;

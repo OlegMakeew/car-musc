@@ -80,6 +80,7 @@
   flex-direction: column;
   border: 1px solid #FFFFFF;
   border-left: none;
+  box-sizing: border-box;
   padding: 2.0833333333vw 0;
 }
 .hero__info:last-child {
@@ -174,6 +175,35 @@
   height: 2.3958333333vw;
 }
 
+.events {
+  padding-top: 5.2083333333vw;
+}
+.events .row .col-4 {
+  padding-right: 1.25vw;
+  box-sizing: border-box;
+  position: relative;
+}
+.events__info {
+  position: absolute;
+  height: 9.7222222222vh;
+  width: 19.0625vw;
+  left: 1.3020833333vw;
+  bottom: -2.734375vw;
+  background: linear-gradient(to bottom, #DB3138 70%, transparent 30%);
+  padding: 1.5625vw 3.1770833333vw 0 3.1770833333vw;
+  box-sizing: border-box;
+}
+.events__info-text {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375vw;
+  line-height: 140%;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 body {
   background: #1E1E1E;
   font-family: "ReformaGrotesk";
@@ -237,7 +267,7 @@ ul {
 }
 
 .col-4 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .col-6 {
@@ -247,4 +277,8 @@ ul {
 .container {
   max-width: 67.5vw;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

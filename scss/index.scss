@@ -79,5 +79,10 @@ ul {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+}
+
+section {
+    margin-top: vw(100);
+    margin-bottom: vw(80);
 }

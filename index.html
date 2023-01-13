@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="./scss/index.css">
     <link rel="icon" href="">
     <title>Главная</title>
@@ -153,7 +154,31 @@
         </section>
         <section class="events">
             <div class="container">
-                <div class="row">
+                <div class="events__slider row">
+                    <div class="col-4">
+                        <img src="./img/eventsImg1.png" alt="">
+                        <div class="events__info">
+                            <p class="events__info-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/eventsImg2.png" alt="">
+                        <div class="events__info">
+                            <p class="events__info-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/eventsImg3.png" alt="">
+                        <div class="events__info">
+                            <p class="events__info-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+                            </p>
+                        </div>
+                    </div>
                     <div class="col-4">
                         <img src="./img/eventsImg1.png" alt="">
                         <div class="events__info">
@@ -182,5 +207,32 @@
             </div>
         </section>
     </main>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.events__slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                nextArrow: `<button class="slick-next">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.71069 7.85547L17.2107 15.3555L9.71069 22.8555L11.2107 25.8555L21.7107 15.3555L11.2107 4.85547L9.71069 7.85547Z" fill="white"/>
+                                </svg>
+                            </button>`,
+                prevArrow: `<button class="slick-prev">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 7.85547L13.5 15.3555L21 22.8555L19.5 25.8555L9 15.3555L19.5 4.85547L21 7.85547Z" fill="white"/>
+                                </svg>
+                            </button>`,
+            });
+        });
+    </script>
 </body>
 </html>

@@ -55,6 +55,8 @@
   align-items: center;
   flex-direction: column;
   padding-top: 22.962962963vh;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .hero__text {
   color: #FFF;
@@ -108,8 +110,6 @@
 
 .achievement {
   color: #FFF;
-  margin-top: 5.2083333333vw;
-  margin-bottom: 4.1666666667vw;
 }
 .achievement .row {
   justify-content: space-around;
@@ -175,9 +175,6 @@
   height: 2.3958333333vw;
 }
 
-.events {
-  padding-top: 5.2083333333vw;
-}
 .events .row .col-4 {
   padding-right: 1.25vw;
   box-sizing: border-box;
@@ -202,6 +199,32 @@
   color: #FFF;
   text-transform: uppercase;
   text-align: center;
+}
+.events__slider {
+  height: 46.2962962963vh;
+  position: relative;
+}
+.events__slider button {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 3.6458333333vw;
+  height: 3.6458333333vw;
+  background: transparent;
+  border: 3px solid #DB3138;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.events__slider button svg {
+  transform: rotate(-45deg);
+}
+.events__slider .slick-prev {
+  left: -6.25vw;
+  top: 50%;
+}
+.events__slider .slick-next {
+  right: -6.25vw;
+  top: 50%;
 }
 
 body {
@@ -280,5 +303,10 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+}
+
+section {
+  margin-top: 5.2083333333vw;
+  margin-bottom: 4.1666666667vw;
 }/*# sourceMappingURL=index.css.map */

@@ -7,6 +7,8 @@
     @include flex($justify: flex-start);
     flex-direction: column;
     padding-top: vh(248);
+    margin-top: 0;
+    margin-bottom: 0;
     &__text {
         color: $text-white;
         @include font(vw(40), 500, 120%);

@@ -1,5 +1,4 @@
 .events {
-    padding-top: vw(100);
     .row {
         .col-4 {
             padding-right: vw(24);
@@ -21,6 +20,30 @@
             color: $text-white;
             text-transform: uppercase;
             text-align: center;
+        }
+    }
+    &__slider {
+        height: vh(500);
+        position: relative;
+        button {
+            position: absolute;
+            transform: rotate(45deg);
+            width: vw(70);
+            height: vw(70);
+            background: transparent;
+            border: 3px solid #DB3138;
+            @include flex;
+            svg {
+                transform: rotate(-45deg);
+            }
+        }
+        .slick-prev {
+            left: vw(-120);
+            top: 50%;
+        }
+        .slick-next {
+            right: vw(-120);
+            top: 50%;
         }
     }
 }

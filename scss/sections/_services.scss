@@ -1,0 +1,69 @@
+.services {
+    .container {
+        @include flex;
+        flex-direction: column;
+    }
+    &__title {
+        @include font(vw(52), 600, 140%);
+        color: $text-white;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: vw(40);
+    }
+    &__buttons {
+        margin-top: vw(60);
+        margin-bottom: vw(80);
+        button {
+            @include font(vw(32), 600, 140%);
+            color: $text-white;
+            text-transform: uppercase;
+            padding: vh(20) vw(30);
+            background-color: transparent;
+            margin-right: vw(60);
+            border: none;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .active {
+            background-color: $bg-red;
+        }
+    }
+    &__list {
+        .col-3 {
+            width: 23.6%;
+        }
+    }
+    &__item {
+        @include flex();
+        flex-direction: column;
+        border: 1px solid $border-grey;
+        box-sizing: border-box;
+        padding: vh(60) vw(40) vh(50);
+        margin-right: vw(24);
+        &:last-child {
+            margin-right: 0;
+        }
+        .button {
+            width: vw(93);
+        }
+        img {
+            height: vw(70);
+        }
+        &-title {
+            @include font(vw(24), 600, 140%);
+            color: $text-white;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin: vh(30) 0 vh(20);
+        }
+        &-text {
+            @include font(vw(16), 600, 140%);
+            color: $text-white;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: vw(25);
+            text-align: center;
+        }
+    }
+}

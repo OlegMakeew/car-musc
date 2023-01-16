@@ -55,8 +55,6 @@
   align-items: center;
   flex-direction: column;
   padding-top: 22.962962963vh;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .hero__text {
   color: #FFF;
@@ -204,20 +202,6 @@
   height: 46.2962962963vh;
   position: relative;
 }
-.events__slider button {
-  position: absolute;
-  transform: rotate(45deg);
-  width: 3.6458333333vw;
-  height: 3.6458333333vw;
-  background: transparent;
-  border: 3px solid #DB3138;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.events__slider button svg {
-  transform: rotate(-45deg);
-}
 .events__slider .slick-prev {
   left: -6.25vw;
   top: 50%;
@@ -225,6 +209,77 @@
 .events__slider .slick-next {
   right: -6.25vw;
   top: 50%;
+}
+
+.quality__list .rhombys {
+  margin-left: 38%;
+}
+.quality__item {
+  margin: 3.7037037037vh 0 3.7037037037vh 0;
+}
+.quality__item-head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.quality__item:first-child {
+  margin-top: 0;
+}
+.quality__item:last-child {
+  margin-bottom: 0;
+}
+.quality__title {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6666666667vw;
+  line-height: 140%;
+  color: #FFF;
+  margin-left: 2.0833333333vw;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.quality__text {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 120%;
+  color: #FFF;
+  margin-top: 1.5625vw;
+  letter-spacing: 0.05em;
+}
+.quality__slider {
+  position: relative;
+}
+.quality__slider .slick-prev {
+  left: 0.78125vw;
+  bottom: 0vh;
+}
+.quality__slider .slick-next {
+  right: 0.78125vw;
+  bottom: 0vh;
+}
+.quality__slider-item {
+  height: 75vh;
+}
+.quality__slider-item img {
+  height: 58.8888888889vh;
+  width: 100%;
+}
+.quality__slider-text {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9375vw;
+  line-height: 140%;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 9.2592592593vh;
+  margin-left: 5.9895833333vw;
+  width: 21.9791666667vw;
 }
 
 body {
@@ -297,6 +352,10 @@ ul {
   width: 50%;
 }
 
+.col-12 {
+  width: 100%;
+}
+
 .container {
   max-width: 67.5vw;
   margin: 0 auto;
@@ -307,6 +366,20 @@ img {
 }
 
 section {
-  margin-top: 5.2083333333vw;
-  margin-bottom: 4.1666666667vw;
+  margin-bottom: 9.375vw;
+}
+
+.slider button {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 3.6458333333vw;
+  height: 3.6458333333vw;
+  background: transparent;
+  border: 3px solid #DB3138;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider button svg {
+  transform: rotate(-45deg);
 }/*# sourceMappingURL=index.css.map */

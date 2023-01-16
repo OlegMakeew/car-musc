@@ -1,0 +1,60 @@
+.quality {
+    &__list {
+        .rhombys {
+            margin-left: 38%;
+        }
+    }
+    &__item {
+        margin: vh(40) 0 vh(40) 0;
+        &-head {
+            @include flex($justify: start);
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        @include font(vw(32), 600, 140%);
+        color: $text-white;
+        margin-left: vw(40);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    &__text {
+        @include font(vw(24), 500, 120%);
+        color: $text-white;
+        margin-top: vw(30);
+        letter-spacing: 0.05em;
+    }
+    &__slider {
+        position: relative;
+        .slick-prev {
+            left: vw(15);
+            bottom: vh(0);
+        }
+        .slick-next {
+            right: vw(15);
+            bottom: vh(0);
+        }
+        &-item {
+            height: vh(810);
+            img {
+                height: vh(636);
+                width: 100%;
+            }
+        }
+        &-text {
+            @include font(vw(18), 600, 140%);
+            color: $text-white;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-top: vh(100);
+            margin-left: vw(115);
+            width: vw(422);
+        }
+    }
+}

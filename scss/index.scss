@@ -8,6 +8,8 @@
 @import './sections/hero';
 @import './sections/achievement';
 @import './sections/events';
+@import './sections/quality';
+@import './sections/services';
 
 body {
     background: $bg-black;
@@ -64,13 +66,17 @@ ul {
     flex-wrap: wrap;
     width: 100%;
 }
-
+.col-3 {
+    width: 25%;
+}
 .col-4 {
     width: 33.3%;
 }
-
 .col-6 {
     width: 50%;
+}
+.col-12 {
+    width: 100%;
 }
 
 .container {
@@ -83,6 +89,20 @@ img {
 }
 
 section {
-    margin-top: vw(100);
-    margin-bottom: vw(80);
+    margin-bottom: vw(180);
+}
+
+.slider {
+    button {
+        position: absolute;
+        transform: rotate(45deg);
+        width: vw(70);
+        height: vw(70);
+        background: transparent;
+        border: 3px solid #DB3138;
+        @include flex;
+        svg {
+            transform: rotate(-45deg);
+        }
+    }
 }

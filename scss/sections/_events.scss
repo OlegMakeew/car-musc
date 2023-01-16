@@ -25,18 +25,6 @@
     &__slider {
         height: vh(500);
         position: relative;
-        button {
-            position: absolute;
-            transform: rotate(45deg);
-            width: vw(70);
-            height: vw(70);
-            background: transparent;
-            border: 3px solid #DB3138;
-            @include flex;
-            svg {
-                transform: rotate(-45deg);
-            }
-        }
         .slick-prev {
             left: vw(-120);
             top: 50%;

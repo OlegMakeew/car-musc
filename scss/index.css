@@ -371,6 +371,27 @@
   text-align: center;
 }
 
+.works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.works__title {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.7083333333vw;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 2.0833333333vw;
+}
+.works ul {
+  margin-top: 3.125vw;
+}
+
 body {
   background: #1E1E1E;
   font-family: "ReformaGrotesk";
@@ -431,6 +452,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.col-2 {
+  width: 16.6%;
 }
 
 .col-3 {

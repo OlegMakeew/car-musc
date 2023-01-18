@@ -1,0 +1,14 @@
+.works {
+    @include flex;
+    flex-direction: column;
+    &__title {
+        @include font(vw(52), 600, 140%);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-white;
+        margin-bottom: vw(40);
+    }
+    ul {
+        margin-top: vw(60);
+    }
+}

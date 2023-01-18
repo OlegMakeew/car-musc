@@ -50,11 +50,14 @@
             @include font(vw(18), 600, 140%);
             color: $text-white;
             text-align: center;
-            letter-spacing: 0.05em;
             text-transform: uppercase;
             margin-top: vh(100);
             margin-left: vw(115);
-            width: vw(422);
+            width: vw(380);
         }
+    }
+    .col-6 {
+        padding: vw(25);
+        box-sizing: border-box;
     }
 }

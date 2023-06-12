@@ -1,3 +1,137 @@
 .footer {
-    
+    text-align: center;
+    &__title {
+        margin-bottom: vw(40);
+        @include flex;
+        flex-direction: column;
+        h2 {
+            @include font(vw(52), 600, 140%);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $text-white;
+        }
+    }
+    &__form {
+        margin-bottom: vw(25);
+        &-inputs {
+            margin-bottom: vw(25);
+            input {
+                width: vw(306);
+                height: vw(47);
+                margin-right: vw(24);
+                border: vw(1) solid $border-grey;
+                background: $bg-black;
+                outline: none;
+                padding-left: vw(25);
+                box-sizing: border-box;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &::placeholder {
+                    @include font(vw(16), 600, 140%);
+                    text-transform: uppercase;
+                    color: $text-gray;
+                }
+                &:focus {
+                    color: $text-white;
+                    border: vw(1) solid $border-red;
+                    &::placeholder {
+                        color: $text-white
+                    }
+                }
+            }
+        }
+        &-comment {
+            @include flex();
+            textarea {
+                width: vw(526);
+                height: vw(150);
+                resize: none;
+                border: vw(1) solid $border-grey;
+                background: $bg-black;
+                padding-left: vw(25);
+                box-sizing: border-box;
+                outline: none;
+                &::placeholder {
+                    @include font(vw(16), 600, 140%);
+                    text-transform: uppercase;
+                    color: $text-gray;
+                }
+                &:focus {
+                    color: $text-white;
+                    border: vw(1) solid $border-red;
+                    &::placeholder {
+                        color: $text-white
+                    }
+                }
+            }
+            div {
+                margin-left: vw(70);
+            }
+        }
+    }
+    &__list-social {
+        li {
+            margin-bottom: vw(15);
+            border: vw(1) solid $border-grey;
+            padding: vw(10);
+            @include flex;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                width: vw(20);
+                height: vw(20);
+            }
+        }
+    }
+    &__info {
+        @include flex;
+        margin-bottom: vw(100);
+        ul {
+            flex-direction: column;
+            margin-left: vw(220);
+            div {
+                @include flex;
+                .footer__info-text:last-child {
+                    margin-left: vw(30);
+                }
+            }
+        }
+        &-text {
+            @include flex;
+            span {
+                @include font(vw(16), 600, 140%);
+                text-transform: uppercase;
+                color: $text-white;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+    &__nav {
+        @include flex;
+        border-top: vh(1) solid $border-grey;
+        padding: vw(30) 0;
+        p {
+            @include font(vw(16), 600, 140%);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-right: vw(187);
+            color: $text-white;
+            opacity: .5;
+        }
+        &-list {
+            @include flex();
+            li {
+                margin-right: vw(40);
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    @include font(vw(24), 500, 120%);
+                    color: $text-white;
+                }
+            }
+        }
+    }
 }

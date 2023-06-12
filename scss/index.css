@@ -44,6 +44,63 @@
   line-height: 120%;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__title {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.7083333333vw;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 2.0833333333vw;
+}
+.footer__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 11.4583333333vw;
+}
+.footer__info ul div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__info ul div .footer__info-text:last-child {
+  margin-left: 1.5625vw;
+}
+.footer__info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__info-text span {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFF;
+  letter-spacing: 0.05em;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero {
   background-image: url(../../img/hero-bg.png);
   background-repeat: no-repeat;

@@ -1,3 +1,43 @@
 .footer {
-    
+    @include flex;
+    flex-direction: column;
+    &__title {
+        @include font(vw(52), 600, 140%);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-white;
+        margin-bottom: vw(40);
+    }
+    &__info {
+        @include flex;
+        ul {
+            @include flex;
+            flex-direction: column;
+            margin-left: vw(220);
+            div {
+                @include flex;
+                .footer__info-text:last-child {
+                    margin-left: vw(30);
+                }
+            }
+        }
+        &-text {
+            @include flex;
+            span {
+                @include font(vw(16), 600, 140%);
+                text-transform: uppercase;
+                color: $text-white;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+    &__nav {
+        @include flex($justify:space-between);
+        p {
+
+        }
+        &-list {
+
+        }
+    }
 }

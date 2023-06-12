@@ -591,6 +591,60 @@
   margin-top: 3.125vw;
 }
 
+.table {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 140%;
+}
+.table__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3.125vw;
+}
+.table__title {
+  font-family: "ReformaGrotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.7083333333vw;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 2.0833333333vw;
+  text-align: center;
+}
+.table__nav, .table__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.9479166667vw;
+}
+.table__nav li, .table__item li {
+  text-align: center;
+  width: 11.9791666667vw;
+}
+.table__nav {
+  border-top: 0.0520833333vw solid #898989;
+  border-bottom: 0.0520833333vw solid #898989;
+}
+.table__nav li a {
+  color: #FFF;
+}
+.table__item {
+  border-bottom: 0.0520833333vw solid #898989;
+}
+.table__item li a {
+  color: #898989;
+  text-transform: uppercase;
+}
+.table__item li:first-child a {
+  color: #DB3138;
+}
+
 body {
   background: #1E1E1E;
   font-family: "ReformaGrotesk";

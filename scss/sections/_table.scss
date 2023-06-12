@@ -1,0 +1,47 @@
+.table {
+    @include font(vw(24), 600, 140%);
+    &__container {
+        @include flex;
+        flex-direction: column;
+        margin-bottom: vw(60);
+    }
+    &__title {
+        @include font(vw(52), 600, 140%);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $text-white;
+        margin-bottom: vw(40);
+        text-align: center;
+    }
+    &__nav, &__item {
+        @include flex($justify: space-between);
+        height: vw(95);
+        li {
+            text-align: center;
+            width: vw(230);
+        }
+    }
+    &__nav {
+        border-top: vw(1) solid $border-grey;
+        border-bottom: vw(1) solid $border-grey;
+        li {
+            a {
+                color: $text-white;
+            }
+        }
+    }
+    &__item {
+        border-bottom: vw(1) solid $border-grey;
+        li {
+            a {
+                color: $text-gray;
+                text-transform: uppercase;
+            }
+            &:first-child {
+                a{
+                    color: $text-red;
+                }
+            }
+        }
+    }
+}
